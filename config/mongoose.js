@@ -8,7 +8,7 @@ mongoose.connnect('mongodb://localhost/todos');
 const db = mongoose.connection;
 
 //error
-db.on('error', console.error.bind(console, "Error in connecting to MongoDB");)
+db.on('error', console.error.bind(console, "Error in connecting to MongoDB"))
 
 //up and running then print the message
 db.once('open', () => {
